@@ -101,7 +101,7 @@ card.innerHTML=`
 <span class="  px-2 py-1 rounded">
 <img src="./assets/Open-Status.png" class="w-4 h-4 inline">
 </span>
-<span class="text-xs bg-red-100 text-red-600 p-1 font-semibold rounded">
+<span class=" bg-red-100 text-red-500 px-2 font-semibold rounded-full">
 ${issue.priority}
 </span>
 
@@ -127,7 +127,7 @@ ${issue.description}
 <span class="bg-red-200 text-yellow-700 px-2 py-1 rounded">
 ${issue.labels[0]}
 </span>
-<span class="bg-yellow-200 text-orange-800 px-2 py-1 rounded">
+<span class="bg-yellow-200 text-orange-700 px-2 py-1 rounded">
 ${issue.labels[1]}
 </span>
 
