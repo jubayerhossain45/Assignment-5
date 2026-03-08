@@ -124,10 +124,10 @@ ${issue.description}
 
 <div class="flex gap-2 mt-3 text-xs">
 
-<span class="bg-red-300 text-gray-200 px-2 py-1 rounded">
+<span class="bg-red-200 text-yellow-700 px-2 py-1 rounded">
 ${issue.labels[0]}
 </span>
-<span class="bg-yellow-200 text-orange-400 px-2 py-1 rounded">
+<span class="bg-yellow-200 text-orange-800 px-2 py-1 rounded">
 ${issue.labels[1]}
 </span>
 
