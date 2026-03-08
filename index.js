@@ -98,9 +98,13 @@ card.innerHTML=`
 
 <div class="flex justify-between">
 
-<span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">
+<span class="  px-2 py-1 rounded">
+<img src="./assets/Open-Status.png" class="w-4 h-4 inline">
+</span>
+<span class="text-xs bg-red-100 text-red-600 p-1 font-semibold rounded">
 ${issue.priority}
 </span>
+
 
 </div>
 
@@ -120,10 +124,10 @@ ${issue.description}
 
 <div class="flex gap-2 mt-3 text-xs">
 
-<span class="bg-yellow-500 text-red-700 px-2 py-1 rounded">
+<span class="bg-red-300 text-gray-200 px-2 py-1 rounded">
 ${issue.labels[0]}
 </span>
-<span class="bg-yellow-500 text-red-700 px-2 py-1 rounded">
+<span class="bg-yellow-200 text-orange-400 px-2 py-1 rounded">
 ${issue.labels[1]}
 </span>
 
@@ -131,7 +135,9 @@ ${issue.labels[1]}
 
 </div>
 
-<div class="mt-3 text-xs text-gray-500">
+<p>____________________________________</p>
+
+<div class="mt-3 text-xs text-gray-500 ">
 
 #${issue.id} by ${issue.author}
 
@@ -163,16 +169,27 @@ const issue = data.data
 
 document.getElementById("modalTitle")
 .innerText = issue.title
-
-document.getElementById("modalDesc")
-.innerText = issue.description
-
 document.getElementById("modalInfo")
 .innerText =
-`Author: ${issue.author}
-Priority: ${issue.priority}
-labels: ${issue.labels}
-Created: ${issue.createdAt}`
+` *Open by ${issue.author}`
+document.getElementById("modalInfo2")
+.innerText =
+`* ${issue.createdAt}`
+document.getElementById("modalInfo3")
+.innerText =
+` ${issue.labels[0]}`
+document.getElementById("modalInfo4")
+.innerText =
+` ${issue.labels[1]}`
+document.getElementById("modalInfo5")
+.innerText =
+` ${issue.author}`
+document.getElementById("modalInfo6")
+.innerText =
+` ${issue.priority}`
+document.getElementById("modalDesc")
+.innerText = issue.description
+ 
 
 document.getElementById("modal")
 .classList.remove("hidden")
