@@ -27,7 +27,7 @@ alert("Wrong Credentials")
 
 }
 
-}
+ }
 
 
 
@@ -236,6 +236,8 @@ active.classList.add(
 
 
 
+
+
 async function searchIssue(){
 
 const text =
@@ -249,4 +251,4 @@ const data = await res.json()
 
 displayIssues(data.data)
 
-}
+  }

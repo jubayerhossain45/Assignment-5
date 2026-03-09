@@ -19,3 +19,5 @@ Ans:By using array function we can make a function shorter then Common one
 
 
 5️⃣ What are template literals?
+
+Ans:Template literals are strings written using backticks `` where variables can be  declared by using ${}.
