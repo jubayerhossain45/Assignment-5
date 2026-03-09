@@ -98,7 +98,7 @@ card.innerHTML=`
 
 <div class="flex justify-between">
 
-<span class="  px-2 py-1 rounded">
+<span class="  px-2 py-1 rounded-full">
 <img src="./assets/Open-Status.png" class="w-4 h-4 inline">
 </span>
 <span class=" bg-red-100 text-red-500 px-2 font-semibold rounded-full">
